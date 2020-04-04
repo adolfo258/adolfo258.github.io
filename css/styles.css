@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F9F9;
+    /* overflow-x: hidden; */
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: #34495E  ;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    font-size: 4em;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 3;
+
+}
+
+h2 span{
+    padding: 0 40px;
+    background-color: #F7F9F9;
+   position: relative;
+   z-index: 5;
+}
+
+h2::before{
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background-color: #566573;
+    width: 80%;
+    position: absolute;
+    top: 60px;
+}
+
+/* //-----------------------Header----------------------// */
+
+.header {
+    background-color: transparent;
+    height: 6rem;
+    width: 100%;
+    position: absolute;
+}
+
+.menu-contenedor{
+    position: relative; 
+    width: 100%;
+}
+
+.menu{
+    width: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    top: 20px;
+    margin: 20px auto;
+    height: 40px;
+    align-items: center;
+}
+
+.menu-item{
+    color: #D6DBDF;
+    list-style: none;
+    font-size: 18px;
+    text-decoration: none;
+    transition: ease all .3s;
+}
+
+.menu-item:hover{
+    color: #5DADE2;
+    text-decoration-line: underline;
+}
+
+
+
+/* //--------------------------Seccion Intro---------------------// */
+
+.intro-section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: url('/img/img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro-contenedor{
+    padding: 10px 20px;
+    height: min-content;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: rgba(144, 148, 151, .5);
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #d6dbdf;
+    transition: ease all .3s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 77%, 0% 77%);
+    transition: all .3s;
+}
+
+.intro-contenedor.active{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.intro-contenedor img{
+    border-radius: 100%;
+    width: 9em;
+}
+
+.intro-nombre{
+    margin-top: 10px;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+}
+
+.intro-subnombre{
+    font-size: 16px;
+}
+
+
+.intro-hablemos{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 1.5em;
+    background-color: #5DADE2;
+    transition: all .3s;
+}
+
+.intro-hablemos:hover{
+    background-color: #2E86C1;
+}
+
+.contacto{
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
+
+}
+.contacto p{
+    margin-bottom: 10px;
+}
+
+/* // ------------------Seccion Conocimientos-------------------// */
+
+.conocimientos-contenedor{
+    margin: 50px auto;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.conocimiento{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conocimiento i{
+    font-size: 150px;
+    transition: ease all .3s;
+}
+
+.conocimiento p{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.fa-html5:hover{
+    color: #F39C12;
+}
+.fa-css3-alt:hover{
+    color: #2874A6;
+}
+.fa-js-square:hover{
+    color: #F4D03F;
+}
+.fa-git-square:hover{
+    color: #E74C3C;
+}
+.fa-github:hover{
+    color: #212F3D;
+}
+.fa-react:hover{
+    color: #5DADE2;
+}
+
+/* //-------------------Seccion Proyectos------------------// */
+
+
+.tarjeta-contenedor{
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    
+}
+
+.tarjeta{
+    position: relative;
+    border-radius: 10px;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #5DADE2;
+    background-color:#F7F9F9;
+    height: 360px;
+    width: 260px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    transition: all .3s;
+    
+}
+
+.tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+.tarjeta img{
+    border-radius: 10px;
+    width: 100%;
+    height: 60%;
+    
+}
+
+.tarjeta h3{
+    letter-spacing: 2px;
+    font-size: 22px;
+    padding: 5px 0;
+}
+
+.tarjeta p{
+    text-align: center;
+    padding: 0 5px;
+}
+
+.tarjeta a{
+    position: absolute;
+    top: 330px;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: ease all .3s;
+} 
+
+.tarjeta a:hover{
+    background-color: #2E86C1;
+}
+
+.github-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+.github-container img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+
+/* //---------------------------Seccion Sobremi------------------// */
+
+
+.sobreMi-contenedor{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+}
+
+.redes-contenedor{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 100%;
+}
+.redes-contenedor img{
+    width: 50px;
+}
+
+/* //-----------------------Footer----------------------// */
+
+footer{
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+}
+
+footer p {
+   padding-top: 15px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    h2{
+        font-size: 2em;
+        padding-bottom: 30px;
+    }
+
+    h2 span{
+        padding: 0;
+        margin-top: 20px;
+    }
+    .menu{
+        margin: 0;
+        z-index: 10;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: rgba(46, 64, 83);
+    }
+
+    .menu-item{
+        font-size: 15px;
+    }
+
+    .intro-contenedor{
+        background-color: rgba(72, 73, 75, 0.5);
+    }
+
+    .conocimientos-contenedor{
+        margin: 30px auto;
+    }
+
+    .conocimiento i{
+        font-size: 110px;
+    }
+
+    .tarjeta-contenedor{
+        margin-top: 0;
+    }
+
+    .sobreMi-contenedor{
+        width: 80%;
+        font-size: 18px;
+    }
+
+    footer p{
+        padding-top: 5px;
+    }
+}
