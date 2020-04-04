@@ -1,0 +1,14 @@
+
+.github-container{
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.github-container img{
+    width: 60px;
+}
