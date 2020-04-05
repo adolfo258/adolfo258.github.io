@@ -12,7 +12,7 @@ body{
 h2{
     display: flex;
     justify-content: center;
-    color: #34495E  ;
+    color: rgb(52, 73, 94)  ;
     font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
     font-size: 4em;
@@ -259,7 +259,7 @@ h2::before{
     text-decoration: none;
     padding: 15px;
     background-color: #000;
-    color: #fff;
+    color: #F7F9F9;
     border-radius: 10px;
     font-size: 16px;
     transition: ease all .3s;
@@ -320,7 +320,7 @@ h2::before{
 
 footer{
     margin-top: 40px;
-    color: #fff;
+    color: #F7F9F9;
     text-align: center;
     background-color: #000;
     height: 50px;
@@ -349,7 +349,7 @@ footer p {
         width: 100%;
         position: fixed;
         top: 0;
-        background-color: rgba(46, 64, 83);
+        background-color: rgb(52, 73, 94);
     }
 
     .menu-item{
@@ -357,7 +357,9 @@ footer p {
     }
 
     .intro-contenedor{
-        background-color: rgba(72, 73, 75, 0.5);
+        margin-top: 150px;
+        padding: 20px 20px;
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
     .conocimientos-contenedor{
