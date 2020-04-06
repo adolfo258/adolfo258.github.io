@@ -213,6 +213,8 @@ h2 span{
     position: relative;
     z-index: 5;
     color: #F7F9F9;
+    top: -40px;
+    padding-bottom: 10px;
 }
 
 
