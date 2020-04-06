@@ -4,33 +4,30 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #F7F9F9;
     /* overflow-x: hidden; */
 }
 
 h2{
+    font-weight: 400;
     display: flex;
     justify-content: center;
-    color: rgb(52, 73, 94)  ;
-    font-family: 'Lato', sans-serif;
+    color: #000  ;
     letter-spacing: 3px;
     font-size: 4em;
     padding-top: 20px;
     padding-bottom: 50px;
     position: relative;
-    z-index: 3;
+    
 
 }
 
 h2 span{
-    padding: 0 40px;
-    background-color: #F7F9F9;
-   position: relative;
-   z-index: 5;
+    color: #5DADE2;
 }
 
-h2::before{
+/* h2::before{
     content: "";
     display: inline-block;
     height: 3px;
@@ -38,7 +35,7 @@ h2::before{
     width: 80%;
     position: absolute;
     top: 60px;
-}
+} */
 
 /* //-----------------------Header----------------------// */
 
@@ -52,10 +49,11 @@ h2::before{
 .menu-contenedor{
     position: relative; 
     width: 100%;
+    z-index: 10;
 }
 
 .menu{
-    width: 500px;
+    width: 600px;
     display: flex;
     justify-content: space-evenly;
     top: 20px;
@@ -65,11 +63,14 @@ h2::before{
 }
 
 .menu-item{
+    font-weight: 400;
+    text-transform: uppercase;
     color: #F7F9F9;
     list-style: none;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     transition: ease all .3s;
+
 }
 
 .menu-item:hover{
@@ -85,48 +86,80 @@ h2::before{
     display: flex;
     justify-content: center;
     height: 100vh;
-    background: url('/img/texture\ \(2\).jfif');
+    background: url('/img/pexels-photo-39811.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.intro-cortina{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+}
+
 .intro-contenedor{
-    padding: 20px 40px;
+    z-index: 3;
+    font-family: 'Titillium Web', sans-serif;
     height: min-content;
     font-size: 14px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 170px;
+    background-color: transparent;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #F7F9F9;
-    transition: ease all .3s;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 77%, 0% 77%);
-    transition: all .3s;
-}
-
-.intro-contenedor.active{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .intro-contenedor img{
-    border-radius: 100%;
-    width: 9em;
+    border: 4px solid #F7F9F9;
+    border-radius: 30%;
+    width: 13em;
+    background-size: cover;
 }
 
 .intro-nombre{
-    margin-top: 10px;
-    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 50px;
     letter-spacing: .1rem;
 }
 
 .intro-subnombre{
-    margin-top: 5px;
-    font-size: 16px;
+    font-weight: 200;
+    font-size: 24px;
 }
 
+.redes-intro{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    font-size: 30px;
+}
 
+.redes-intro a{
+    position: relative;
+    height: 46px;
+    width: 46px;
+    border: 1px solid rgba(247, 249, 249, .2);
+}
+
+.redes-intro i {
+    position: absolute;
+    top: 7.5px;
+    left: 8.5px;
+    color: #F7F9F9;
+    transition: all .3s;
+}
+
+.redes-intro a:hover i {
+    color: #5DADE2;
+}
+
+/* 
 .intro-hablemos{
     cursor: pointer;
     outline: none;
@@ -139,7 +172,7 @@ h2::before{
     font-size: 1.5em;
     background-color: #5DADE2;
     transition: all .3s;
-}
+} */
 
 .intro-hablemos:hover{
     background-color: #2E86C1;
@@ -157,8 +190,26 @@ h2::before{
 
 /* // ------------------Seccion Conocimientos-------------------// */
 
+.conocimientos-section{
+    padding: 50px 0;
+    position: relative;
+    margin-top: 30px;
+    background: url('/img/pexels-photo-1903702.jpeg');
+    background-size: cover;
+}
+
+.conocimientos-section h2 {
+    position: relative;
+    z-index: 5;
+    color: #F7F9F9;
+}
+
+
 .conocimientos-contenedor{
-    margin: 50px auto;
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+    margin-bottom: 30px;
     width: 80vw;
     display: flex;
     justify-content: space-around;
@@ -166,40 +217,23 @@ h2::before{
 }
 
 .conocimiento{
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    width: 160px;
+    padding: 10px;
+    
 }
 
 .conocimiento i{
-    font-size: 150px;
-    transition: ease all .3s;
+    font-size: 100px;
+    color: #F7F9F9;
 }
 
 .conocimiento p{
     font-size: 30px;
     margin-top: 10px;
+    color: #F7F9F9;
 }
 
-.fa-html5:hover{
-    color: #F39C12;
-}
-.fa-css3-alt:hover{
-    color: #2874A6;
-}
-.fa-js-square:hover{
-    color: #F4D03F;
-}
-.fa-git-square:hover{
-    color: #E74C3C;
-}
-.fa-github:hover{
-    color: #212F3D;
-}
-.fa-react:hover{
-    color: #5DADE2;
-}
 
 /* //-------------------Seccion Proyectos------------------// */
 
@@ -290,31 +324,66 @@ h2::before{
 
 /* //---------------------------Seccion Sobremi------------------// */
 
+.sobreMi-section{
+    padding-bottom: 20px;
+}
 
-.sobreMi-contenedor{
-    width: 60%;
+.sobre-mi-contenedor{
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    font-size: 20px;
+    width: 80%;
     margin: 0 auto;
-    font-size: 22px;
-    text-align: center;
-}
-
-.redes-contenedor{
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-}
-
-.redes{
-    margin: 30px;
-    display: flex;
-    justify-content: space-around;
-    width: 300px;
     height: 100%;
 }
-.redes-contenedor img{
-    width: 50px;
+
+
+.sobre-mi1 img{
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+    position: relative;
+    top: -100px;
+
 }
+.sobre-mi1{
+    height: 400px;
+}
+.sobre-mi2{
+    padding-left: 40px;
+}
+.sobre-mi2 p{
+    width: 80%;
+}
+
+.sobre-mi3{
+    width: 80%;
+    margin-top: 40px;
+    display: flex;
+}
+
+.sobre-mi-btn{
+    margin-top: 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 200px;
+    transition: all .3s;
+    border: 1.5px solid #000;
+}
+
+.sobre-mi-btn a {
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.sobre-mi-btn:hover{
+    background-color: #2E86C1;
+}
+
+
 
 /* //-----------------------Footer----------------------// */
 
@@ -331,55 +400,92 @@ footer p {
    padding-top: 15px;
 }
 
-
-
-@media only screen and (max-width: 600px) {
-    h2{
-        font-size: 2em;
-        padding-bottom: 30px;
+@media screen and (max-width: 1400px){
+    .sobre-mi3{
+        flex-direction: column;
     }
-
-    h2 span{
-        padding: 0;
-        margin-top: 20px;
+    .sobre-mi3 p {
+        margin-bottom: 10px;
     }
-    .menu{
-        margin: 0;
-        z-index: 10;
+}
+
+@media screen and (max-width: 1000px){
+    .sobre-mi1 img{
+        display: none;
+    }
+    .sobre-mi-contenedor{
+        display: block;
         width: 100%;
+    
+        
+    }
+    .sobre-mi1{
+        display: none;
+    }
+    .sobre-mi2{
+        padding: 0;
+        text-align: center;
+        
+    }
+    .sobre-mi2 p{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .sobre-mi2 div{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .menu{
+        max-width: 360px;
         position: fixed;
         top: 0;
-        background-color: rgb(52, 73, 94);
+        margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.9);
     }
-
     .menu-item{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .intro-contenedor{
-        margin-top: 150px;
-        padding: 20px 20px;
-        background-color: rgba(0, 0, 0, 0.6);
+        margin-top: 120px;
+    }
+    h2{
+        font-size: 35px;
+    }
+
+    .sobreMi-section{
+        padding-bottom: 0;
+    }
+
+    .sobre-mi-contenedor{
+        font-size: 16px;
+    }
+
+    .sobre-mi3 p{
+        font-size: 13px;
+        margin-bottom: 10px;
     }
 
     .conocimientos-contenedor{
-        margin: 30px auto;
+        margin: 0 auto;
     }
 
-    .conocimiento i{
-        font-size: 110px;
+    .conocimiento{
+        width: 120px;
     }
-
-    .tarjeta-contenedor{
-        margin-top: 0;
-    }
-
-    .sobreMi-contenedor{
-        width: 80%;
+    .conocimiento p {
         font-size: 18px;
     }
 
-    footer p{
-        padding-top: 5px;
+    .conocimiento i{
+        font-size: 80px;
+    }
+    
+    footer{
+        font-size: 12px;
     }
 }
