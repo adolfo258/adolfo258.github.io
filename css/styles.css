@@ -401,17 +401,66 @@ h2 span{
 /* //-----------------------Footer----------------------// */
 
 footer{
+    padding: 30px 0;
     margin-top: 40px;
-    color: #F7F9F9;
-    text-align: center;
     background-color: #000;
-    height: 50px;
     width: 100%;
 }
 
-footer p {
-   padding-top: 15px;
+
+footer form{
+    border: 2px solid #F7F9F9;
+    border-radius: 10px;
+    color: #F7F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    font-size: 25px;
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
 }
+
+footer label {
+    margin: 15px 0;
+}
+
+footer input {
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+footer textarea {
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%;
+    height: 120px;
+}
+
+.btn-send{
+    border-radius: 10px;
+    color: #F7F9F9;
+    background-color: #5DADE2;
+    border: none;
+    width: 30%;
+    margin: 0 auto;
+    outline: none;
+    font-size: 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn-send:hover{
+    background-color: #2E86C1;
+}
+
+
+
+/* ----------------------------Media Querys--------------------- */
 
 @media screen and (max-width: 1400px){
     .sobre-mi3{
@@ -499,7 +548,20 @@ footer p {
         font-size: 80px;
     }
     
-    footer{
-        font-size: 12px;
+    footer form{
+        width: 90%;
+    }
+    footer input{
+        font-size: 16px;
+    }
+
+    footer textarea{
+        font-size: 16px;
+    }
+
+    .btn-send{
+        width: 80px;
+        font-size: 16px;
     }
 }
+
