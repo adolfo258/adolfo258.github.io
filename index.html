@@ -44,16 +44,14 @@
                 <div class="sobre-mi1"><img src="/img/yo.jpg" alt=""></div>
                 <div class="sobre-mi2">
                     
-                    <p> Me llamo Adolfo Zuazo, tengo 26 años y soy un apasionado por la informatica, tecnologia y el desarrollo web.
-                        Tengo mucha curiosidad y todos los dias aprendo algo nuevo, llevo 5 meses de estudios y practicas, desarrollando diferentes proyectos.
+                    <p> Me llamo Adolfo Zuazo, tengo 26 años y soy un apasionado por la informática, tecnología y el desarrollo web. Tengo mucha curiosidad y todos los días aprendo algo nuevo, llevo 5 meses de estudios y practicas, desarrollando diferentes proyectos.
                         <br>
-                        
-                        Ahora estoy en la busqueda de mi primer empleo en esta area, con muchas ganas de seguir aprendiendo y convertime algun dia en un gran programador!.
+                        <br>
+                        Mi otra pasión y a lo que me dedico por el momento es el deporte, hace 3 años que practico Crossfit y actualmente soy coach en un gimnasio de mi barrio.
+                        <br>
+                        <br>
+                        Ahora estoy en la búsqueda de mi primer empleo en esta área, con muchas ganas de seguir aprendiendo y convertirme algún día en un gran programador!.
                     </p>
-                    <div class="sobre-mi3">
-                        <p><strong>E-mail: </strong> adolfo_zuazo@hotmail.com</p>
-                        <p><strong>Numero: </strong>+3517477280</p>
-                    </div>
 
                     <div class="sobre-mi-btn">
                         <a href="/adolfocvProgramador.pdf">DOWNLOAD CV</a>
@@ -99,7 +97,7 @@
                 <div class="tarjeta">
                     <img src="/img/formulario.png" alt="">
                     <h3>Proyecto 1</h3>
-                    <p>Formulario Dinamico para trajeta de credito, con animaciones y validacion.</p>
+                    <p>Formulario Dinámico para tarjeta de credito, con animaciones y validación.</p>
                     <a href="/formulario.html">Ver mas</a>
                 </div>     
                 <div class="tarjeta">
@@ -111,13 +109,13 @@
                 <div class="tarjeta">
                     <img src="/img/appprocuts.png" alt="">
                     <h3>Proyecto 3</h3>
-                    <p>Aplicacion para agregar y borrar productos, estilos con boostrap</p>
+                    <p>Aplicación para agregar y borrar productos, estilos con boostrap</p>
                     <a href="/appProductos.html">Ver mas</a>
                 </div>     
                 <div class="tarjeta">
                     <img src="/img/appclima.png" alt="">
                     <h3>Proyecto 4</h3>
-                    <p>Aplicacion del clima de cualquier ciudad del mundo, haciendo peticiones a una API.</p>
+                    <p>Aplicación del clima de cualquier ciudad del mundo, haciendo peticiones a una API.</p>
                     <a href="/appclima.html">Ver mas</a>
                 </div>     
                 <div class="tarjeta">
@@ -132,21 +130,32 @@
         
     </main>
     <footer>
-        <form
-  action="https://formspree.io/xlewnvny"
-  method="POST"
->       <h4>Contacto</h4>
-  <label>
-    <input placeholder="Nombre" type="text" name="name">
-  </label>
-  <label>
-    <input placeholder="E-mail" type="email" name="_replyto">
-  </label>
-  <label>
-    <textarea placeholder="Mensaje" name="message"></textarea>
-  </label>
-  <input  class="btn-send" type="submit" value="Enviar">
-</form>
+        <div id="popupMensaje" class="popup-mensaje">
+            
+            <form
+            action="https://formspree.io/xlewnvny"
+            method="POST"
+          >       <h4>Contacto</h4>
+            <label>
+              <input placeholder="Nombre" type="text" name="name">
+            </label>
+            <label>
+              <input placeholder="E-mail" type="email" name="_replyto">
+            </label>
+            <label>
+              <textarea placeholder="Mensaje" name="message"></textarea>
+            </label>
+            <div>
+            <input  class="btn-send" type="submit" value="Enviar">
+            <div class="btn-cerrar" id="popup-cerrar"><i class="far fa-window-close"></i></div>
+            </div>
+          </form>
+        </div>
+        <div class="footercontact">
+          <p><strong>Numero: </strong>+3517477280</p>
+          <p><strong>E-mail: </strong>adolfo_zuazo@hotmail.com</p>
+          <button id="btn-mensaje">¡Escríbeme un Mensaje!</button>
+        </div>
     </footer>
     <script src="./js/main.js"></script>
 </body>
