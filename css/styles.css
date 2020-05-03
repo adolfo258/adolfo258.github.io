@@ -60,7 +60,7 @@ h2 span{
     list-style: none;
     font-size: 18px;
     text-decoration: none;
-    transition: ease all .3s;
+    transition: .5s;
 
 }
 
@@ -154,7 +154,7 @@ h2 span{
     top: 7.5px;
     left: 8.5px;
     color: #F7F9F9;
-    transition: all .3s;
+    transition: all .5s;
 }
 
 .redes-intro a:hover i {
@@ -300,7 +300,7 @@ h2 span{
     color: #F7F9F9;
     border-radius: 10px;
     font-size: 16px;
-    transition: ease all .3s;
+    transition: all .5s;
 } 
 
 .tarjeta a:hover{
@@ -367,7 +367,7 @@ h2 span{
     border-radius: 10px;
     background-color: transparent;
     width: 200px;
-    transition: all .3s;
+    transition: all .5s;
     border: 1.5px solid #000;
 }
 
@@ -413,7 +413,7 @@ footer button{
     border: 1.5px solid #F7F9F9;
     color: #F7F9F9;
     background-color: #5DADE2;
-    transition: all .3s;
+    transition: all .5s;
     cursor: pointer;
 }
 .btn-send:hover{
@@ -481,7 +481,7 @@ footer textarea {
     margin: 0 auto;
     outline: none;
     font-size: 20px;
-    transition: all .3s;
+    transition: all .5s;
     cursor: pointer;
     border: 2px solid #F7F9F9;
 }
