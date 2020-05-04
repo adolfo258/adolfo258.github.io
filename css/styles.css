@@ -407,10 +407,10 @@ footer div{
 
 footer button{
     font-size: 18px;
-    padding: 5px;
+    padding: 10px;
     outline: none;
     border-radius: 5px;
-    border: 1.5px solid #F7F9F9;
+    border: 2px solid #F7F9F9;
     color: #F7F9F9;
     background-color: #5DADE2;
     transition: all .5s;
