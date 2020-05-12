@@ -406,8 +406,8 @@ footer div{
 }
 
 footer button{
-    font-size: 18px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 8px;
     outline: none;
     border-radius: 5px;
     border: 2px solid #F7F9F9;
@@ -593,12 +593,12 @@ footer textarea {
 
     footer{
         
-        height: 130px;
+        height: 150px;
         padding: 15px 0;
     }
 
     #btn-mensaje{
-        margin-top: 10px;
+        margin: 15px 0;
     }
     
     footer form{
@@ -622,7 +622,6 @@ footer textarea {
         justify-content: space-around;
         height: 100%;
     }
-    
 }
 
 
