@@ -414,6 +414,10 @@ footer a {
     background-color: #2E86C1;
 }
 
+.btn__mailto{
+    color: #F7F9F9;
+}
+
 .footercontact a {
     text-decoration: underline;
     transition: color .5s;
