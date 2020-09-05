@@ -119,7 +119,7 @@ body {
 
 
 .trasera .firma{
-	width: 340px;
+	width: 300px;
 	height: 40px;
 	background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px);
 }
@@ -130,7 +130,6 @@ body {
 	color: black;
 	background-color: white;
 	height: 40px;
-	width: 100px;
 }
 
 .trasera .firma p{
@@ -284,4 +283,10 @@ body {
 
 .github-container img{
     width: 60px;
+}
+
+@media screen and (max-width:500px){
+	.trasera .firma{
+		width: 150px;
+	}
 }
