@@ -49,6 +49,7 @@ body {
 .delantera{
 	background: url(/formulario-tarjeta-credito-3d-codigo_base/img/bg-tarjeta/bg-tarjeta-01.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .delantera .logo-marca{
@@ -89,6 +90,7 @@ body {
 .trasera{
 	background: url(/formulario-tarjeta-credito-3d-codigo_base/img/bg-tarjeta/bg-tarjeta-01.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	width: 100%;
 	position: absolute;
 	top: 0;
