@@ -195,6 +195,16 @@ h2 span{
     background-size: cover;
 }
 
+.conocimientos-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .conocimientos-section h2 {
     position: relative;
     z-index: 5;
@@ -209,7 +219,7 @@ h2 span{
     z-index: 5;
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 80vw;
+    width: 90vw;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
